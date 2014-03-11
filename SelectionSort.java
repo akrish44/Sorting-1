@@ -7,16 +7,20 @@ public class SelectionSort {
 	}
 
 	public int[] Selection(int[] numbers) {
-		int placeHolder = numbers[0];
-		int minimum = numbers[1];
-		for (int j=0; j<numbers.length; j++)
+		int place = 0;
+		for (int j=0; j<numbers.length; j++) {
+			int placeHolder = numbers[j];
+			int minimum = numbers[j+1];
 			for (int i=placeHolder+1; i<numbers.length-1; i++) {
 				if (numbers[i]>numbers[i+1]) {
-					int minimum = numbers[i+1];
-				}	
+					minimum = numbers[i+1];
+					place = i + 1;
+				} else {
+					place = i;
+				}
 			}
 			if (placeHolder>minimum) {
-				
+			   int 	
 			}
 		}
 	}
