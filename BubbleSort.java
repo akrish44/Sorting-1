@@ -2,7 +2,6 @@ public class BubbleSort {
   public static void main(String[] args) {
         int[] numbers = {8,3,7,8,7,1,0};
         swap(numbers); 
-        print(numbers);
     }
 
     private static void swap(int[] numbers) {
@@ -16,13 +15,15 @@ public class BubbleSort {
                     numbers[k+1] = temp;
                 }
             }
+        print(numbers);
         }
     }
 
     private static void print(int[] numbers) {
         for(int i=0; i<numbers.length; i++) {
-            System.out.print(numbers[i]+ " ");
+            System.out.print(numbers[i]+ " , ");
         }
+        System.out.println("\n");
     }
 }
 
